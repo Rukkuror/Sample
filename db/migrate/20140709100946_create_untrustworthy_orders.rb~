@@ -1,0 +1,24 @@
+class CreateUntrustworthyOrders < ActiveRecord::Migration
+  def change
+    create_table :untrustworthy_orders do |t|
+
+      t.string :customer_name
+      t.string :customer_phone
+      t.string :customer_email
+      t.integer :past_job_order_count
+      t.integer :past_rdb_order_count
+      t.string :host_site
+      t.string :login_ips
+      t.string :past_approval
+      t.string :payments
+      t.string :address_line1
+      t.string :address_line2
+      t.string :address_city
+      t.string :address_state
+      t.string :address_zip
+      t.string :order_status
+      
+      t.timestamps
+    end
+  end
+end
